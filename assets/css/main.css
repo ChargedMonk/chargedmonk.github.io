@@ -2384,10 +2384,10 @@ input, select, textarea {
 			}
 
 				.feature li {
-					padding: 4em 4em 2em 6em ;
+					padding: 4em 2em 2em 6em ;
 					display: block;
 					position: relative;
-					text-align: left;
+					text-align: center;
 					width: 50%;
 				}
 
@@ -2455,6 +2455,37 @@ input, select, textarea {
 					.feature li:nth-last-child(2) {
 						border-bottom-left-radius: 3px;
 					}
+					@media screen and (max-width: 980px) {
+
+						.feature li {
+							padding: 3em 2em 1em 2em ;
+							text-align: center;
+						}
+
+							.feature li:before {
+								left: 0;
+								margin: 0 0 1em 0;
+								position: relative;
+								top: 0;
+							}
+
+					}
+
+					@media screen and (max-width: 736px) {
+
+						.feature li {
+							padding: 3em 0 1em 0 ;
+							background-color: transparent !important;
+							border-top: solid 20% #fff;
+							width: 100%;
+						}
+
+							.feature li:first-child {
+								border-top: 0;
+							}
+
+					}
+
 
 /* Features */
 
@@ -2568,10 +2599,10 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				.features li {
-					padding: 3em 0 1em 0 ;
+					padding: 3em 1em 1em 1em ;
 					background-color: transparent !important;
-					border-top: solid 2px #fff;
-					width: 100%;
+					border-top: solid 5% #fff;
+					width: 50%;
 				}
 
 					.features li:first-child {
